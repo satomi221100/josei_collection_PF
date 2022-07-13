@@ -1,24 +1,34 @@
-# README
+ # josei_collection
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+### サイトテーマ
 
-Things you may want to cover:
+女性専用　働く女性の為のコミュニティサイト
 
-* Ruby version
+### テーマを選んだ理由
+コロナ渦で働き方や、子育て、結婚などいろいろあると思いますが悩みや不安などを解消したい
+主に悩み事をネット上で他の人と共有し、女性の為に役立つおすすめな本や情報、コラムをレビューするサイトを作成したいと考えました。
+都内などで1人で悩みを抱え込んでしまう女性が多いことや、自分自身も行動をしたいときに
+有力な情報やアドバイスなどが欲しい時にこのような女性に特化したアプリケーションがあれば嬉しいなと思ったのと、
+世の中の女性のために何か助けになるものが作れればと思い考案しました。
 
-* System dependencies
+### ターゲットユーザ
+-主に２０代から５０代の女性
+-仕事で悩んでいる事がある人
+-転職したいと考えている人
+-働き方に悩みを抱えている人
 
-* Configuration
 
-* Database creation
+### 主な利用シーン
+転職をするときや雇用形態、福利厚生などのアドバイスなどを知りたい時
+将来の事、結婚や子育てあらゆる女性の悩みを聞いてほしい時
+情報交換をしたいときに利用、活用していくアプリケーションになります。
+その他、様々なトピックを投稿し共有できます。
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 開発環境
+- OS：Linux(CentOS)
+- 言語：HTML,CSS,JavaScript,Ruby,SQL
+- フレームワーク：Ruby on Rails
+- JSライブラリ：jQuery
+- IDE：Cloud9
