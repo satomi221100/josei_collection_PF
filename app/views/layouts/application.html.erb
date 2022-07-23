@@ -24,7 +24,7 @@
         <ul class="navbar-nav ml-auto">
           <li>
            <%= link_to user_path(current_user),class:"nav-link text-light" do%>
-          <i class="fa-solid fa-house-user"></i>Home
+          <i class="fas fa-house-user"></i>Home
            <%end%>
           </li>
           <li>
@@ -38,9 +38,10 @@
           <%end%>
           </li>
           <li>
-          <%= link_to destroy_user_session_path,method: :delete,class:"nav-link text-light" do%>
-          <i class="fas fa-sign-out-alt"></i>Log out
-          <%end%>
+          <%#= link_to destroy_user_session_path,method: :delete,class:"nav-link text-light" do%>
+          <%= link_to "サインアウト", destroy_user_session_path,method: :delete %>
+          <!--<i class="fas fa-sign-out-alt"></i>Log out-->
+          <%#end%>
           </li>
         </ul>
       </div>

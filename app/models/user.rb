@@ -11,8 +11,8 @@ class User < ApplicationRecord
   has_many :book_comments, dependent: :destroy
   # has_many :xxx, class_name: "モデル名", foreign_key: "○○_id", dependent: :destroy
   #has_many :yyy, through: :xxx, source: :zzz
-  validates :name, uniqueness: true, presence: true, length: { minimum: 2, maximum: 20 }
-  validates :introduction, length: {maximum: 50 }
+  #validates :name, uniqueness: true, presence: true, length: { minimum: 2, maximum: 20 }
+  #validates :introduction, length: {maximum: 50 }
    def get_profile_image(width,height)
     unless profile_image.attached?
       file_path = Rails.root.join('app/assets/images/no_image.jpg')
