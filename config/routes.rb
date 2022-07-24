@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get "home/about" => "homes#about", as: 'about'
   resources :books
+  scope :book do
+    post "/:id/favorites" => "favorites#create", as: 'favorites'
+    delete "/favorite/:id" => "favorites#destroy", as: 'favorite'
+    post "/:id/comments" => "book_comments#create", as: 'comments'
+    delete "/comment/:id" => "book_comments#destroy", as: 'comment'
+  end
   resources :users
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

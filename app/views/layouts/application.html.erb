@@ -38,10 +38,10 @@
           <%end%>
           </li>
           <li>
-          <%#= link_to destroy_user_session_path,method: :delete,class:"nav-link text-light" do%>
-          <%= link_to "サインアウト", destroy_user_session_path,method: :delete %>
-          <!--<i class="fas fa-sign-out-alt"></i>Log out-->
-          <%#end%>
+          <%= link_to destroy_user_session_path,method: :delete,class:"nav-link text-light" do%>
+          <%#= link_to destroy_user_session_path,method: :delete %>
+          <i class="fas fa-sign-out-alt"></i>Log out
+          <%end%>
           </li>
         </ul>
       </div>

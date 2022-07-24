@@ -20,11 +20,11 @@
             <td><%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' } %></td>
             <td>
               <% if @book.favorited?(current_user) %>
-                <%= link_to book_favorites_path(@book), method: :delete do %>
+                <%= button_to book_favorites_path(@book), method: :delete do %>
                 <span style="color:red;">❤︎</span>
                 <% end %>
               <% else %>
-                <%= link_to book_favorites_path(@book), method: :post do %>
+                <%= button_to favorites_path(@book), method: :post do %>
                 <span>❤︎</span>
                 <% end %>
               <% end %><%= @book.favorites.count %>
@@ -43,7 +43,7 @@
         <% end %>
         </tr>
          <div>
-        <%= form_with model: [@book, @book_comment] do |f| %>
+        <%= form_with url: comments_path(@book), model: [@book, @book_comment] do |f| %>
 
           <div class="form-group">
           <%= f.text_area :comment, class: "form-control"%></div>
