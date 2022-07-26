@@ -12,6 +12,20 @@ class User < ApplicationRecord
   # has_many :xxx, class_name: "モデル名", foreign_key: "○○_id", dependent: :destroy
   #has_many :yyy, through: :xxx, source: :zzz
   #validates :name, uniqueness: true, presence: true, length: { minimum: 2, maximum: 20 }
+  # 検索方法分岐
+  def self.looks(search, word)
+    if search == "perfect_match"
+      @user = User.where("name LIKE?", "#{word}")
+    elsif search == "forward_match"
+      @user = User.where("name LIKE?","#{word}%")
+    elsif search == "backward_match"
+      @user = User.where("name LIKE?","%#{word}")
+    elsif search == "partial_match"
+      @user = User.where("name LIKE?","%#{word}%")
+    else
+      @user = User.all
+    end
+  end
   #validates :introduction, length: {maximum: 50 }
    def get_profile_image(width,height)
     unless profile_image.attached?
