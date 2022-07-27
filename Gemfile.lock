@@ -85,9 +85,9 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
-    dotenv (2.7.6)
-    dotenv-rails (2.7.6)
-      dotenv (= 2.7.6)
+    dotenv (2.8.0)
+    dotenv-rails (2.8.0)
+      dotenv (= 2.8.0)
       railties (>= 3.2)
     erubi (1.10.0)
     ffi (1.15.5)
@@ -118,7 +118,7 @@ GEM
     minitest (5.16.2)
     mysql2 (0.5.4)
     nio4r (2.5.8)
-    nokogiri (1.13.7)
+    nokogiri (1.13.8)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     orm_adapter (0.5.0)
@@ -200,11 +200,11 @@ GEM
       sprockets (>= 3.0.0)
     sqlite3 (1.4.4)
     thor (1.2.1)
-    tilt (2.0.10)
+    tilt (2.0.11)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -237,7 +237,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   dotenv-rails
-  image_processing
+  image_processing (~> 1.2)
   jbuilder (~> 2.7)
   listen (~> 3.3)
   mysql2
